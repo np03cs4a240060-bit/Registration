@@ -1,0 +1,102 @@
+/* GLOBAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* BODY */
+body {
+    font-family: "Poppins", sans-serif;
+
+    /* 🌈 Static gradient background (no animation) */
+    background: linear-gradient(135deg, 
+        #ffdde1,   /* baby pink */
+        #c2ffd8    /* mint green */
+    );
+
+    color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CONTAINER */
+.registration-box {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    padding: 35px;
+    border-radius: 18px;
+    width: 370px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* FORM TITLE */
+.registration-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2rem;
+
+    background: linear-gradient(90deg, #ff6fd8, #6fc3ff, deeppink);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* INPUTS */
+input {
+    padding: 12px;
+    border: 2px solid #d6b8ff;
+    border-radius: 10px;
+    background: #ffffffd9;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #8cd3ff;
+    box-shadow: 0 0 10px #bae8ff;
+    outline: none;
+}
+
+/* BUTTON */
+button {
+    background: linear-gradient(90deg, #ff77d9, deeppink);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.06);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* ERROR & SUCCESS */
+.error-box {
+    color: #ff2e63;
+    font-size: 14px;
+    margin-top: -6px;
+}
+
+.success-box {
+    color: #28b463;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+}
